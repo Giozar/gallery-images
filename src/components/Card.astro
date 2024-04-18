@@ -1,0 +1,9 @@
+---
+const {image} = Astro.props;
+---
+<picture>
+    <a href={`/${image.id}`}>
+        <source srcset={`${image.src}${image.id}.jpg`} type="image/jpg">
+        <img src={`${image.src}${image.id}.webp`} alt={image.alt} title={image.title} loading="lazy" decoding="async" class="w-40 h-40 transition duration-300">
+    </a>
+</picture>

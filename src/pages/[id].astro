@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { images } from '../ts/images'
+
+export async function getStaticPaths() {
+    return images.map( ({id, name, src, alt, title}) => ({
+        params: {id},
+        props: {name, src, alt, title}
+    }));
+}
+const { id } = Astro.params;
+const { name, src, alt, title } = Astro.props;
+---
+
+<Layout title={name}>
+    <section>
+        <picture>
+            <source src={`${src}${id}.jpg`} type="image/jpg">
+            <img src={`${src}${id}.webp`} alt={alt} title={title} loading="lazy" decoding="async" class="transition duration-300">
+        </picture>
+    </section>
+</Layout>

@@ -1,0 +1,20 @@
+---
+import { images } from '../ts/images'
+import Card from "./Card.astro";
+
+interface Image {
+    id: number,
+    name: string;
+    alt: string;
+    src: string;
+    title: string;
+}
+---
+
+<section class="grid grid-cols-4 gap-4">
+    {
+        images.map( (image: Image) => (
+            <Card image={image} />
+        ))
+    }
+</section>

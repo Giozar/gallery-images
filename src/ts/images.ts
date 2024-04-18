@@ -1,0 +1,58 @@
+export const images = [
+    {
+        id: 1,
+        name: 'Imagen 1',
+        alt: 'Descripción de la imagen',
+        src: 'images/gallery/imagen',
+        title: 'Titulo de la imagen',
+    },
+    {
+        id: 2,
+        name: 'Imagen 2',
+        alt: 'Descripción de la imagen',
+        src: 'images/gallery/imagen',
+        title: 'Titulo de la imagen',
+    },
+    {
+        id: 3,
+        name: 'Imagen 3',
+        alt: 'Descripción de la imagen',
+        src: 'images/gallery/imagen',
+        title: 'Titulo de la imagen',
+    },
+    {
+        id: 4,
+        name: 'Imagen 4',
+        alt: 'Descripción de la imagen',
+        src: 'images/gallery/imagen',
+        title: 'Titulo de la imagen',
+    },
+    // {
+    //     id: 5,
+    //     name: 'Imagen 5',
+    //     alt: 'Descripción de la imagen',
+    //     src: 'images/gallery/imagen',
+    //     title: 'Titulo de la imagen',
+    // },
+    // {
+    //     id: 6,
+    //     name: 'Imagen 5',
+    //     alt: 'Descripción de la imagen',
+    //     src: 'images/gallery/imagen',
+    //     title: 'Titulo de la imagen',
+    // },
+    // {
+    //     id: 7,
+    //     name: 'Imagen 5',
+    //     alt: 'Descripción de la imagen',
+    //     src: 'images/gallery/imagen',
+    //     title: 'Titulo de la imagen',
+    // },
+    // {
+    //     id: 8,
+    //     name: 'Imagen 5',
+    //     alt: 'Descripción de la imagen',
+    //     src: 'images/gallery/imagen',
+    //     title: 'Titulo de la imagen',
+    // },
+];
