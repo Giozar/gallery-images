@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { images } from '../ts/images'
+import { fade } from 'astro:transitions';
 
 export async function getStaticPaths() {
     return images.map( ({id, name, src, alt, title}) => ({
@@ -16,7 +17,7 @@ const { name, src, alt, title } = Astro.props;
     <section>
         <picture>
             <source src={`${src}${id}.jpg`} type="image/jpg">
-            <img src={`${src}${id}.webp`} alt={alt} title={title} loading="lazy" decoding="async" class="transition duration-300">
+            <img transition:animate={fade({ duration: '1s' })} src={`${src}${id}.webp`} alt={alt} title={title} loading="lazy" decoding="async" class="transition duration-300">
         </picture>
     </section>
 </Layout>
