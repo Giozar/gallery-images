@@ -17,7 +17,7 @@ const { name, src, alt, title } = Astro.props;
     <section>
         <picture>
             <source src={`${src}${id}.jpg`} type="image/jpg">
-            <img transition:animate={fade({ duration: '1s' })} src={`${src}${id}.webp`} alt={alt} title={title} loading="lazy" decoding="async" class="transition duration-300">
+            <img transition:animate={fade({ duration: '1s' })} src={`${src}${id}-big.webp`} alt={alt} title={title} loading="lazy" decoding="async" class="transition duration-300">
         </picture>
     </section>
 </Layout>
